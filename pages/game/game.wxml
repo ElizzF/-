@@ -1,0 +1,37 @@
+<!--pages/game/game.wxml-->
+<view class="game">
+  <view class="top_bar">
+    <view class="display">
+      <view class="min_step">历史最短步数：{{ minStep }}</view>
+      <view class="shortest_time">历史最快时间：{{ shortestM }}:{{ shortestS }}</view>
+    </view>
+    <view class="restart"> 
+      <button class="bt_restart" bindtap="restart">重新开始</button>
+      <button class="problem" bindtap="inquiry">下一步</button>
+    </view>
+  </view>
+
+  <view class="index_count">
+    <view class="time_count">时间 {{m}}:{{s}}</view>
+    <view class="step_count">步数 {{ step }}</view>
+  </view>
+
+
+  <!-- <view class="warning_jump">还有X步将调换X格和X格</view> -->
+
+  <view class="contain" style="width:calc({{windowWidth}}px - 60rpx + 4rpx);height:calc({{windowWidth}}px - 60rpx + 4rpx);">
+    <block wx:for='{{pictureData}}' wx:key="{{index}}"  wx:for-item='item'>
+      <image data-index='{{index}}' style="width:calc(({{windowWidth}}px - 60rpx) / 3);height:calc(({{windowWidth}}px - 60rpx) / 3)" catchtouchstart="goMove" src="{{ item.picture }}">
+      </image>
+    </block>
+    <!-- <image class="img" src="../../img/aim.png" style="width: {{windowWidth}}px; height: {{windowWidth}}px;"></image> -->
+  </view>
+
+  <view class="buttom_bar">
+    <!-- <button class="animation">动画演示帮助</button> -->
+    <button class="reset" bindtap="reset">重置</button>
+    <button class="reset" bindtap="free">自动</button>
+    <!-- <button class="free_jump">自由调换</button> -->
+  </view>
+
+</view>

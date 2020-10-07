@@ -1,0 +1,15 @@
+<!--pages/preparation/preparation.wxml-->
+<view class="preparation" catchtouchmove="noneEnoughPeople">
+  <view class="regulation">
+    <view class="regulation_title">游戏规则</view>
+    <view class="regulation_rules">
+      <view>你需要做的事就是移动打乱的图片将图片恢复到下面的目标图案。</view>
+    </view>
+  </view>
+  <view class="aim_image">
+    <view class="img_title">目标图案</view>
+    <!-- <image class="img" src="../../img/aim.png"></image> -->
+    <image wx:if="{{ originImg }}" class="img" src="{{ originImg }}"></image>
+  </view>
+  <button bindtap="goToGame" class="confirm_start">确认</button>
+</view>

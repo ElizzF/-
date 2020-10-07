@@ -1,0 +1,41 @@
+/* pages/preparation/preparation.wxss */
+.regulation {
+  margin-top: 20rpx;
+}
+.regulation_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 55rpx;
+}
+.regulation_rules {
+  margin-top: 20rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.aim_image {
+  text-align: center;
+  font-weight: 600;
+  font-size: 45rpx;
+  margin-top: 20rpx;
+}
+.img {
+  width: 500rpx;
+  height: 500rpx;
+  margin-top: 20rpx;
+}
+.confirm_start {
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-color: rgb(187, 187, 187);
+  border-width: 1rpx;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px 0px;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  opacity: 0.68;
+  margin-top: 20rpx;
+}

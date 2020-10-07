@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view catchtouchmove="noneEnoughPeople">
+  <image src="/img/title.png" class="img"></image>
+  <view class="index">
+    <button bindtap="goToPreparation" class="begin_game">开始游戏</button>
+    <button bindtap="authorization" class="authorization">登录授权</button>
+    <navigator hover-class="none" target="miniProgram" open-type="exit"><button class="end_game">退出游戏</button></navigator>
+  </view>
+</view>

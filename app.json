@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/preparation/preparation",
+    "pages/game/game"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "图片华容道",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap34.json"
+}
